@@ -6,11 +6,6 @@ See root README for full details. This folder contains **user.service**, a stand
 
 ```bash
 docker build -t user-service .
-docker run -p 8081:8081 \
-  -e MONGO_URI="mongodb+srv://<user>:<pass>@cluster.mongodb.net" \
-  -e DB_NAME=users \
-  -e PORT=8081 \
-  user-service
 ```
 
 ### Endpoints
